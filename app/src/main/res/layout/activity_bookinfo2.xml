@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+       <ImageView
+           android:id="@+id/imgbook"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:src="@drawable/notebook"
+           />
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgbook"
+        android:layout_alignParentTop="true"
+        android:text=" الحضارة الاسلامية"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        />
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgbook"
+            android:layout_below="@+id/bookname"
+            android:layout_marginLeft="10dp"
+            android:text="اسم المؤلف"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            />
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbook"
+        android:layout_marginTop="20dp"
+        android:text="publisher: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/publishername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbook"
+        android:layout_toRightOf="@+id/publisher"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="publisher: "
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/publishtrig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisher"
+        android:layout_marginTop="20dp"
+        android:text="Published Date: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/publish_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisher"
+        android:layout_toRightOf="@+id/publishtrig"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="2018-09-21"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publishtrig"
+        android:paddingTop="20dp"
+        android:text="book description"/>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
